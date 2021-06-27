@@ -1,0 +1,45 @@
+.btn{
+    padding: 20px;
+    outline: none;
+    border: none;
+    font-size: $default-font-size;
+    cursor: pointer;
+    font-weight: $font-weight-lighter;
+    &:hover{
+        background-color: $color-gray-light;
+        color: $color-primary-dark;
+    }
+}
+
+.btn--light{
+    @extend .btn;
+    font-size: $font-size-large;
+    color: $color-primary-dark;
+    background-color: rgba($color-primary-light,0.50);
+    &:hover{
+        background-color: white;
+    }
+}
+
+.btn--dark{
+    @extend .btn;
+    padding: 10px;
+    background-color: $color-primary-dark;
+    color: white;
+    
+}
+.btn--dark--bigger{
+    @extend .btn;
+    padding: 16px 24px;
+    background-color: $color-primary-dark;
+    color: white;
+    
+}
+.btn--bigger{
+    @extend .btn;
+    padding: 10px;
+    background-color:$color-gray-lighter;
+    color: $color-primary-dark;
+    width: 100%;
+    
+}

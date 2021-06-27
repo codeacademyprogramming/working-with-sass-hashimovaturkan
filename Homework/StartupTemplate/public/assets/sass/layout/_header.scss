@@ -1,0 +1,117 @@
+.header{
+    
+    &__top{
+        position: fixed;
+        top: 0%;
+        z-index: 1;
+        width: 100%;
+        font-size: $default-font-size;
+        box-shadow: 0 2px 5px 0 rgba($color-primary-dark, 0.20);
+        &__wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-primary-light;
+            &__logo{
+                display: inline-block;
+                padding: 17px;
+                letter-spacing: 4px;
+                color: $color-primary-dark;
+                &:hover{
+                    background-color: $color-gray-light;
+                }
+            }
+            &__nav{
+
+                &__items{
+                    display: flex;
+                    align-items: center;
+                    a{
+                        color: $color-primary-dark;
+                        display: inline-block;
+                        padding: 17px;
+                        &:hover{
+                            background-color: $color-gray-light;
+                        }
+                    }
+                }
+                
+            }
+            &__hamburger{
+                display: none;
+                margin-right: 17px;
+                label{
+                    cursor: pointer;
+                }
+                
+                &__menu{
+                    position: absolute;
+                    left: 0%;
+                    top: 0%;
+                    width: 200px;
+                    height: 100vh;
+                    left: -200px;
+                    background-color:$color-primary-dark ;
+                    color: $color-primary-light;
+                    font-size: $font-size-large;
+                    a{
+                        padding: 10px;
+                        display: block;
+                        color: $color-primary-light;
+                        &:hover{
+                            background-color: $color-gray-dark;
+                        }
+                    }
+                }
+                &__check{
+                    &:checked + div{
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+    }
+    &__main{
+        position: relative;
+        img{
+            /*shekli tam duzeldenmedim*/
+            filter: grayscale(50%);
+            width: 100%;
+            height: 650px;
+            object-fit: cover;
+        }
+
+        &__title{
+            position: absolute;
+            top: 100px;
+            padding: 7rem 2rem;
+            &__h{
+                color: $color-primary-light;
+                font-size: $font-size-largest;
+                font-weight: $font-weight-light;
+            }
+            span{
+                display: block;
+                color: $color-primary-light;
+                font-size: $font-size-large;
+                padding: 30px 0;
+            }
+            &__media{
+                position: absolute;
+                bottom: 30px;
+                padding:2rem;
+                a{
+                    padding: 2px;
+                    svg{
+                        fill:$color-gray-dark;
+                    }
+                }
+
+            }
+
+
+        }
+
+    }
+}
