@@ -1,0 +1,54 @@
+.container-fluid{
+    max-width: 100%;
+}
+.container{
+    max-width: $grid-witdh;
+    margin: 0% auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+}
+
+
+
+
+
+//COLUMNS
+@for $i from 1 through 12 {
+    .col-#{$i}{
+
+        //width:calc((100% - (#{$gutter-horizontal} * (#{$columns} - 1)) ) / 12 * #{$i} + (#{$gutter-horizontal} * #{$i} - #{$gutter-horizontal}));
+        width: 100% / 12 * $i;
+        padding:$gutter-horizontal/2 ;
+        
+
+    }
+    
+}
+
+
+//MEDIA-QUERIES
+@each $k in $max-width {
+
+    @media screen and (max-width:Process($k)) {
+        @for $i from 1 through $columns {
+
+            .col-#{$k}-#{$i}{
+
+                // width:calc((100% - (#{$gutter-horizontal} * (#{$columns} - 1)) ) / 12 * #{$i} + (#{$gutter-horizontal} * (#{$i}-1))); //??? nie ishlemedi
+
+                //width:calc((100% - (#{$gutter-horizontal} * (#{$columns} - 1)) ) / 12 * #{$i} + (#{$gutter-horizontal} * #{$i} - #{$gutter-horizontal}));
+                width: 100% / 12 * $i;
+                padding:$gutter-horizontal/2 ;
+            }
+        }
+    }
+   
+}
+
+

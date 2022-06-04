@@ -1,0 +1,14 @@
+@function Process($max-width){
+    @if $max-width==xs {
+        @return 576px;
+    }
+    @else if $max-width==sm{
+        @return 720px;
+    }
+    @else if $max-width==md{
+        @return 960px;
+    }
+    @else if $max-width==lg{
+        @return 1200px;
+    }
+}

@@ -1,0 +1,30 @@
+
+/*ABSTRACTS*/
+@import './abstracts/functions/index.scss';
+@import './abstracts/mixins/index.scss';
+@import './abstracts/variables/index.scss';
+
+/*BASE*/
+@import './base/base';
+@import "./base/typography";
+@import "./base/utilities";
+@import './base/animations';
+
+
+
+/*HELPER*/
+@import './helpers/reset_elements';
+
+
+/*COMPONENTS*/
+@import './components/button';
+
+
+/*LAYOUT*/
+@import './layout/header';
+@import './layout/footer';
+@import './layout/grid';
+
+
+/*PAGES*/
+@import './pages/home';

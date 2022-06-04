@@ -1,7 +1,7 @@
 {
   "name": "P317-FE-CSS-SCSS",
   "version": "1.0.0",
-  "description": "",
+  "description": "* https://sass-lang.com/\r * https://dev.to/timothyrobards/the-main-features-of-sass-47k2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^6.0.0"
-  }
+    "node-sass": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeacademyprogramming/working-with-sass-hashimovaturkan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codeacademyprogramming/working-with-sass-hashimovaturkan/issues"
+  },
+  "homepage": "https://github.com/codeacademyprogramming/working-with-sass-hashimovaturkan#readme",
+  "devDependencies": {}
 }

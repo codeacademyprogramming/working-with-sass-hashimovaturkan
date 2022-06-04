@@ -1,0 +1,32 @@
+.footer{
+    color:$color-primary-light;
+    padding:12rem 2rem;
+    background-color: $color-primary-dark;
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__button{
+            margin-bottom: 30px;
+            a{
+                color: $color-primary-dark;
+            }
+        }
+        &__media{
+            margin-bottom: 30px;
+            a{
+                padding: 5px;
+                svg{
+                    fill: $color-primary-light;
+                }
+            }
+        }
+        &__by{
+            font-size: $default-font-size;
+            a{
+                text-decoration: underline;
+                color: $color-primary-light;
+            }
+        }
+    }
+}
